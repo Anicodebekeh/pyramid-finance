@@ -1,0 +1,328 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    /* overflow-y: hidden; */
+}
+
+/* parent div -------------------------------------------- */
+.main{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-auto-rows: minmax(600px, auto);
+    padding: 0px 20%;
+    /* border: solid red 1px; */
+    background: #FFFFFF;
+    margin: 4% auto;
+    position: relative;
+    grid-gap: 60px;
+   
+}
+
+
+/* Left pane ---------------------------------------------- */
+.left-pane{
+    /* border: solid black 1px; */
+    position: relative;
+    width: 400px;
+    background: linear-gradient(324.93deg, #007AFF 0.74%, #0F70DA 100%);
+}
+
+.left-pane h1{
+    font-size: 18px;
+    color: #fff;
+    line-height: 30px;
+    text-align: center;
+    font-weight: 600;
+    padding-top: 20px;
+    
+}
+
+
+.left-pane .elipse {
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    background: linear-gradient(324.93deg, #0F70DA 0.74%, #007AFF 100%);
+    top: 20%;
+    left: 4%; 
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.elipse img{
+    width: 150px;
+    height: 300px;
+    margin-top: 20px;
+    object-fit: cover;
+}
+
+.left-pane .frontimg img{
+    height: 361px;
+    z-index: 80;
+    position: relative;
+    margin-left: 92px;
+    margin-top: 43px;
+    width: 205px;
+}
+
+.left-pane .footer{
+    display: flex;
+    justify-content: center;
+}
+
+.left-pane .footer div{
+    height: 7px;
+    width: 7px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    z-index: 100;
+    margin: 40px 7px;
+}
+
+.left-pane .footer div:nth-of-type(2){
+    background-color: #fff;
+}
+
+
+/* Right-pane -------------------------------------------- */
+.right-pane{
+    background: #FFFFFF;
+    /* border: solid black 1px; */
+}
+
+.right-pane .logo{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.right-pane .logo img{
+    width:41px;
+
+}
+
+.right-pane .logo h1{
+    font-size: 18px;
+    font-weight: 600px;
+    color: #1d1d1d;
+    padding-left: 10px;
+}
+
+.right-pane .header{
+    margin: 2rem 0 1.5rem 0;
+}
+
+.right-pane .header h2{
+    font-size: 1.2rem;
+    color: #1D1D1D;
+    padding-bottom: 0.4rem;
+}
+
+.right-pane .header p{
+    font-size: 0.65rem;
+    color: #2D3748;
+}
+
+.right-pane .input-fields form {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    column-gap: 20px;
+    row-gap: 10px;
+}
+
+.right-pane .input-fields form label{
+    font-size: 0.65rem;
+    color: #2D3748;
+}
+
+.right-pane .input-fields form input{
+    width: 15rem;
+    border-radius: 0.2rem;
+    border: 0.1rem solid #d1d1d1;  
+    color: #2D3748;  
+    font-size: 12px;
+    padding: 5px 10px;
+}
+
+.right-pane .input-fields form input[type ='date']{
+    color: #d1d1d1;
+}
+
+.right-pane .input-fields form input:focus{
+    outline: none !important;
+    border:1px solid #007AFF;
+;
+}
+
+
+.right-pane .input-fields form .subfield input[type='checkbox']{
+    width: 1.11rem;
+    border-radius: 0;
+    display: inline-block;
+}
+
+.right-pane .input-fields form .subfield label{
+  display: flex;
+  align-items: center;
+}
+
+.right-pane .input-fields form .subfield label span{
+    color: #007AFF;
+    padding: 0 2px;
+  }
+
+
+.right-pane .input-fields form .blue{
+    font-size: 0.65rem;
+    color: #007AFF;
+    display: block;
+    text-align: right;
+}
+
+.right-pane .input-fields form button{
+    text-align: center;
+    padding: 6px 0;
+    background: #007AFF;
+    border-radius: 5px;
+    border: 0;
+    color: #fff;
+    margin-top: 15px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.right-pane .input-fields form button:nth-of-type(2){
+    display: flex;
+    align-items: center;
+    background-color: #2D3748;
+    justify-content: center;
+}
+
+.right-pane .input-fields form button:nth-of-type(2) img{
+    padding-right: 8px;
+    width: 15px;
+    padding-top: 6px;
+}
+
+.right-pane .input-fields p{
+    text-align: center;
+    padding-top: 20px;
+    color: #2D3748;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.right-pane .input-fields p span{
+    color: #007AFF;
+}
+
+.right-pane .input-fields footer{
+    display: flex;
+    gap: 10px;
+    color: #fff;
+    font-size: 12px;
+    margin-top: 38px;
+}
+
+.right-pane .input-fields footer .googleplay{
+    display: flex;
+    background: #000000;
+    align-items: center;
+    border-radius: 5px;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+
+.right-pane .input-fields footer img{
+    width: 30px;
+    object-fit: cover;
+}
+
+.right-pane .input-fields footer p{
+    color: #fff;
+    padding: 5px 5px;
+    text-align: left;
+}
+
+.right-pane .input-fields footer .googleplay p span{ 
+    color: #fff;
+    font-size: 10px;
+}
+/* 
+.right-pane .input-fields footer .googleplay p span{ 
+    color: #fff;
+} */
+
+
+
+/* small screen ---------------------- */
+
+
+@media only screen and (max-width: 600px) {
+    body .main{
+        grid-template-columns: none ; 
+        grid-template-rows: 1fr ; 
+        margin: 0 auto;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    .left-pane h1 {
+        font-size: 16px;
+        text-align: left;
+        padding-top: 20px;
+        padding-left: 20px;
+    }
+
+    .left-pane .elipse {
+        width: 300px;
+        height: 300px;
+        left: 8%;        
+    }
+
+    .left-pane .frontimg img {
+        margin-left: 81px;
+    
+    }
+
+    .right-pane {
+        padding-right: 37px;
+        padding-left: 13px;
+    }
+
+    .right-pane .logo {
+        margin-top: 0px;
+    }
+   
+
+    .right-pane .input-fields form {
+        grid-template-columns: none;
+        grid-template-rows: 1fr;
+    }
+
+    .right-pane .input-fields form label {
+        display: block;
+    }
+
+    .right-pane .input-fields form input {
+        width: 90%;
+    }
+
+    .right-pane .input-fields form .blue {
+        text-align: left;
+    }
+
+    .right-pane .input-fields form button {
+        width: 96%;
+    }
+
+    .right-pane .input-fields footer {
+        justify-content: center;
+    }
+}
+
